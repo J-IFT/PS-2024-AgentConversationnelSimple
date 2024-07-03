@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce4ec; /* Rose clair */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #e91e63; /* Rose */
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff4081; /* Rose vif */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f50057; /* Rose foncé au survol */
+}
+
+#botResponse {
+    margin-top: 20px;
+}
+
+#botResponse p {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f8bbd0; /* Rose pâle */
+    border-radius: 4px;
+}
+
+#botResponse p:nth-child(even) {
+    background-color: #f48fb1; /* Rose plus foncé */
+}
+
+#botResponse p strong {
+    font-weight: bold;
+    color: #e91e63; /* Rose */
+}

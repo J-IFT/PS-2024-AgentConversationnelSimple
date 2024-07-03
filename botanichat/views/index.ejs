@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botanichat</title>
+    <!-- Lier le fichier CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Utilisation de la classe container pour englober le contenu -->
+    <div class="container">
+        <h1>Bienvenue à Botanichat 🌸</h1>
+        <p>Posez-moi des questions sur les fleurs :</p>
+        <!-- Formulaire d'entrée utilisateur -->
+        <form>
+            <input type="text" id="userInput" placeholder="Posez une question...">
+            <button type="button" onclick="sendMessage()">Envoyer 🌼</button>
+        </form>
+        <!-- Div pour afficher les réponses du bot -->
+        <div id="botResponse"></div>
+    </div>
+
+    <!-- Script JavaScript pour gérer l'interaction utilisateur -->
+    <script>
+        async function sendMessage() {
+            let userInput = document.getElementById('userInput').value;
+            document.getElementById('userInput').value = '';
+            document.getElementById('botResponse').innerHTML += `<p><strong>Vous:</strong> ${userInput} 🌸</p>`;
+
+            try {
+                // Appel à l'API /api/chat pour récupérer la réponse du bot
+                const response = await fetch(`/api/chat?userInput=${encodeURIComponent(userInput)}`);
+                const data = await response.text();
+                // Affichage de la réponse du bot
+                document.getElementById('botResponse').innerHTML += `<p><strong>Botanichat:</strong> ${data} 🌼</p>`;
+            } catch (error) {
+                console.error('Erreur lors de la récupération de la réponse du bot :', error);
+            }
+        }
+    </script>
+</body>
+</html>
