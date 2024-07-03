@@ -1,0 +1,11 @@
+{
+  "name": "botanichat",
+  "version": "1.0.0",
+  "description": "Un agent conversationnel simple sur les fleurs en JavaScript.",
+  "main": "botanichat.js",
+  "scripts": {
+    "start": "node botanichat.js"
+  },
+  "author": "Juliette",
+  "license": "MIT"
+}
