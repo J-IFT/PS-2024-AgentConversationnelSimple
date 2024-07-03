@@ -4,7 +4,7 @@
 
 Juillet 2024
 
-Groupe : Juliette et ???????????
+Groupe : Juliette Erwan Saad
 
 ### 📌 Consignes du projet : 
 
