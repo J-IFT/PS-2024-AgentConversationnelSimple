@@ -4,7 +4,7 @@
 
 Juillet 2024
 
-Groupe : Juliette Erwan Saad
+Groupe : Juliette Erwan Saad Yohan Flavien
 
 ### 📌 Consignes du projet : 
 
